@@ -3,89 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A_propos</title>
+    <title>A propos</title>
     <style>
-        body{
+        body {
             background: url(../images/arriére_plan.png);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-
-        .container{
+        .container {
             backdrop-filter: blur(10px);
             width: 100%;
             height: 100vh;
+            padding: 20px;
         }
-    nav li{
-        float: left;
-        width: 175px;
-        height: 45px;
-        background-color: rgb(87, 39, 87);
-        text-align: center;
-        border-left: 1px solid white;
-        border-right: 1px solid white;
-        line-height: 35px;
-        list-style:  none;
-    }
-    nav a{
-        color: rgb(255, 255, 255);
-        text-decoration:  none;
-        display: black;
-   }
-    nav li a:hover{
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: rgb(87, 39, 87);
+        }
+        nav li {
+            flex: 1 0 150px;
+            height: 45px;
+            text-align: center;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            line-height: 35px;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        nav li:hover {
             background-color: plum;
-            color: #ebebea;
-    }
-    nav{
-    height:  45px;
-     }
-     
-    #prf{
-            float: left;
+        }
+        #prf, #parcour {
+            width: 45%;
+            margin: 10px;
             font-size: large;
         }
-  
-    #parcour{
+        #prf {
+            float: left;
+        }
+        #parcour {
             float: right;
-            font-size: large;
-       }
-       div img{
-        border-radius: 50%;
-       }
-       </style>
+        }
+        div img {
+            border-radius: 50%;
+        }
+        @media (max-width: 768px) {
+            nav li {
+                width: 100%;
+            }
+            #prf, #parcour {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <div class="container">
-            <nav>
-        <ul>
-        <li><a href="../index.html">Accueil</a></li>
-      <li style="background-color: plum;"><a href="#">A Propos</a></li>
-        <li><a href="Competence.html">Compétences</a></li>
-        <li><a href="projet.html">Projet</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav><br>
-    <div>
-        <img src="../images/logo.jpg" alt="" width="100px">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li style="background-color: plum;"><a href="#">A Propos</a></li>
+                <li><a href="Competence.html">Compétences</a></li>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav><br>
+        <div>
+            <img src="../images/logo.jpg" alt="" width="100px">
+        </div>
+        <section id="prf">  
+            <h5>Je m'appelle <b>Awa DIOUF</b><br><br>
+            Étudiante en deuxième année informatique,<br><br>
+            À l'université IBA DER THIAM de Thiés. J'ai 20 ans.<br><br> 
+            Je suis dévouée à la création d'expériences numériques attrayantes et faciles à utiliser...
+            </h5>
+        </section>
+        <section id="parcour">
+            <h3><u>Parcours académique</u></h3>
+            <h5><li><b>2023-2024:</b> Licence 2, informatique, Université Iba Der Thiam de Thiés</li></h5>
+            <h5><li><b>2022-2023:</b> Licence 1, informatique, Université Iba Der Thiam de Thiés</li></h5>
+            <h5><li><b>2021-2022:</b> Baccalauréat, Lycée Sergent Malamine Camara (série S2)</li></h5>
+            <h5><li><b>2018-2019:</b> Brevet de Fin d'Études Moyennes (BFEM), Collège Oussou</li></h5>
+        </section>
     </div>
-
-    <section id="prf">  
-             <h5>je m'appelle <b>Awa DIOUF</b> <br><br>
-              étudiante en deuxieme année informatique,<br><br>
-               à l'université IBA DER THIAM de Thiés.j'ai 20ans. <br> <br> 
-               <br>
-               Je suis dévouée à la Création d'experiences numériques attrayantes et faciles à utiliser...
-             </h5>
-    </section>
-    <section id="parcour">
-        <h3><u>Parcour académique</u></h3>
-        <h5><li><b>2023-2024: </b>   licence 2, informatique, Université Iba Der Thiam de Thiés </h5></li></p>
-            <p><h5><li><b>2022-2023: </b>   licence 1 ,informatique ,Université Iba Der Thiam de Thiés </h5></li></p>
-            <p><h5><li><b> 2021-2022 :  </b>   Baccalauréat, Lycee Sergent Malamine Camara (serie S2) </h5></p>
-            <p><h5><li><b> 2018-2019:</b> Brevet de Fin D'étude Moyen(BFEM) , Collége Oussou</h5></li></p>
-    </section>
-    </div>
-
-   
-
 </body>
 </html>
