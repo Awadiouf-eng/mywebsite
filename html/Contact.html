@@ -3,108 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../JS/page.js"></script>
+    <title>Compétences</title>
     <style>
-        body{
-            background: url(../images/arriére_plan.png);
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-    nav li{
-        float: left;
-        width: 175px;
-        height: 45px;
-        background-color: rgb(87, 39, 87);
-        text-align: center;
-        border-left: 1px solid white;
-        border-right: 1px solid white;
-        line-height: 35px;
-        list-style:  none;
-    }
-    nav a{
-        color: rgb(255, 255, 255);
-       text-decoration:  none;
-        display: black;
-    }
-    nav li a:hover{
-    background-color: plum;
-    color: #ebebea;
-    }
-    #for {
-    float: right;
-     background:plum;  
-    margin: 0;
-}
-
-
-#for form{
-    border:  1px solid purple;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-}
-
-#for form input{
-    width: 500px;
-    margin: 5px auto;
-}
-#for form label{
-    width: 300px;
-    margin: 5px auto;
-}
-.con{
-    float: left;
-    background:plum;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    margin: 5px auto;
-
-}  
-    #resultat{
-        width: 200px;
-        height: 100px;
-        margin-right: 5%;
-    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: rgb(87, 39, 87);
+        }
+        nav li {
+            flex: 1 0 150px;
+            height: 45px;
+            text-align: center;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            line-height: 35px;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        nav li:hover {
+            background-color: plum;
+        }
+        #left {
+            background: url(../images/comp.jpg);
+            min-height: 100vh;
+            width: 40%;
+        }
+        #main-content {
+            display: flex;
+            width: 100%;
+            border-style: double;
+            min-height: 100vh;
+        }
+        #right {
+            width: 60%;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #des, #ds, #ses, #ces {
+            margin: 20px 0;
+        }
+        h1:hover {
+            background-color: plum;
+            text-align: center;
+        }
+        #right h1 {
+            background-color: plum;
+            text-align: center;
+        }
+        span:hover {
+            background-color: plum;
+        }
+        @media (max-width: 768px) {
+            #left, #right {
+                width: 100%;
+                float: none;
+            }
+            #main-content {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
     <nav>
         <ul>
-           <li><a href="../index.html">Accueil</a></li>
-           <li><a href="A_propos.html">A Propos</a></li>
-           <li><a href="Competence.html">Compétences</a></li>
-           <li><a href="projet.html">Projets</a></li>
-           <li style="background-color: plum;"><a href="#">Contact</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="A_propos.html">À Propos</a></li>
+            <li style="background-color: plum;"><a href="#">Compétences</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="Contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <br>
-        <section id="for">
-            <h2>FORMULAIRE DE Contact</h2>
-                <form >
-                    
-                      <label for="name">Nom</label>
-                      <input type="text" name="name" id="nom">
-         
-                      <label > prénom</label>
-                      <input type="text" name="prénom" id="prenom">
-          
-                      <label >Mail</label>
-                       <input type="text" name="mail" id="mail" >
-
-                       <label >Message</label>
-                       <textarea rows="5" name="" id=""></textarea>
-        
-                        <button type="button" onclick="messagealerte()">Envoyer</button>
-                        <p id="resultat"></p>
-                </form>
-        </section>
-        <aside class="con">
-            <h3> <u>vous pouvez me Contacter.. </u></h3>
-            <p><img src=" ../images/twitter.png"alt="" width="25"> @HTML.5</p>
-            <p><img src="../images/facebook.png" alt="" width="25"> Facebook.com/eva§.diouf</p>
-            <p><img src="../images/logo mail.jpg" alt="" width="25">evadiouf2022@gmail.com </p>
-            <p><img src="../images/logo tel.jpg" alt="" width="23"> (+221)76 192 47 09</p>
-        </aside>
-       
+    </nav><br>
+    <div id="main-content">
+        <div id="left"></div>
+        <div id="right">
+            <h1><u>MES Compétences</u></h1>
+            <p id="des">
+                <img src="../images/web.jpg" alt="" width="75px" height="75px">
+                HTML, CSS, JavaScript, Bootstrap (90%)
+            </p>
+            <div id="ds">
+                <dl>
+                    <dt><img src="../images/Java.png" alt="" width="50px" height="50px"></dt>
+                    <dd>Langage de programmation Java (40%)</dd>
+                </dl>
+            </div><br>
+            <div id="ses">
+                <dl>
+                    <dt><img src="../images/c++.png" alt="" width="50px" height="50px"></dt>
+                    <dd>Langage C++ (30%)</dd>
+                </dl>
+            </div><br>
+            <div id="ces">
+                <dl>
+                    <dt><img src="../images/ccc.png" alt="" width="50px" height="50px"></dt>
+                    <dd>Langage C (97%)</dd>
+                </dl>
+            </div><br>
+            <div>
+                <dl>
+                    <dt><img src="../images/py.webp" alt="" width="50px" height="50px"></dt>
+                    <dd>Python (47%)</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
